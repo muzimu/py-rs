@@ -1,0 +1,14 @@
+[package]
+name = "py"
+version = "0.1.0"
+edition = "2021"
+description = "汉字转拼音首字母命令行工具 (Rust 实现)"
+authors = []
+
+[[bin]]
+name = "py"
+path = "src/main.rs"
+
+[dependencies]
+pinyin = "0.11"
+clap = { version = "4", features = ["derive"] }
